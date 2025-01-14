@@ -22,6 +22,8 @@ Please use [environment.txt](https://github.com/ubc-tea/DESA/blob/main/environme
 
 Please download the [DIGIT](https://drive.google.com/drive/folders/1s_QRtmLG6ibUlycMjUeSsqy4pwaqdi7o?usp=sharing), [RETINA](https://drive.google.com/file/d/1MMK8bourqVFyJ-UbuMgB40n-xTYHlHl2/view?usp=sharing), and [CIFAR10C](https://drive.google.com/drive/folders/1BIBvskSH-gbt7s50fRrJO5Rld1XXqCbb?usp=sharing) and put them under data folder.
 
+Note that we only provide the pretrained model and distilled data for DIGITS.
+
 ### Run training
 
 The training command is
@@ -33,12 +35,12 @@ python fedlgd_main.py --dataset [dataset] --wk_iters [local_epoch] --iters [tota
 Please refer to our paper for the detailed hyperparameter settings.
 
 
-### Run testing
+### Run testing on DIGITS
 
 Please use the following command to test the results of DIGITS experiment. The ckpt file can be found in [here]((/checkpoint/server_model_local1_100.pt)). Please download it and put in the SAVE_PATH folder generated based on the hyperparameter setting.
 
 ```
-python fedlgd_main.py --dataset [dataset] --wk_iters [local_epoch] --iters [total_communication_rounds] --batch [batch_size] --model [architecture] --ipc [image_per_class] --lambda_sim [coefficient] --reg_loss [regularization_loss] --test True
+python fedlgd_main.py --dataset digits --wk_iters 1 --iters 100 --batch 32 --model ConvNet --ipc 50 --lambda_sim 10 --reg_loss contrastive --test True
 ```
 
 ## Citation
