@@ -1,5 +1,5 @@
 """
-FedDC v1: global_client distilled data training using GM + global distilled data using GM
+Official implementation for the TMLR paper "FedLGD - Federated Learning on Virtual Heterogeneous Data with Local-GLobal Dataset Distillation"
 """
 import sys, os
 base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -218,7 +218,7 @@ if __name__ == '__main__':
     parser.add_argument('--batch', type = int, default= 32, help ='batch size')
     parser.add_argument('--iters', type = int, default=100, help = 'iterations for communication')
     parser.add_argument('--wk_iters', type = int, default=1, help = 'optimization iters in local worker between communication')
-    parser.add_argument('--mode', type = str, default='feddc', help='fedavg | fedprox | fedbn | feddc')
+    parser.add_argument('--mode', type = str, default='fedlgd', help='fedavg | fedprox | fedbn | fedlgd')
     parser.add_argument('--mu', type=float, default=1e-2, help='The hyper parameter for fedprox')
     parser.add_argument('--save_path', type = str, default='./checkpoint', help='path to save the checkpoint')
     parser.add_argument('--resume', action='store_true', help ='resume training from the save path checkpoint')
