@@ -20,7 +20,7 @@ Please use [environment.txt](https://github.com/ubc-tea/DESA/blob/main/environme
 
 ### Download DIGITS, CIFAR10C, and RETINA data
 
-Please download the [DIGIT](https://drive.google.com/drive/folders/1s_QRtmLG6ibUlycMjUeSsqy4pwaqdi7o?usp=sharing), [RETINA](https://drive.google.com/file/d/1MMK8bourqVFyJ-UbuMgB40n-xTYHlHl2/view?usp=sharing), and [CIFAR10C](https://drive.google.com/drive/folders/1BIBvskSH-gbt7s50fRrJO5Rld1XXqCbb?usp=sharing) and put them under data folder.
+Please download the [DIGIT](https://drive.google.com/file/d/1zOddGFldTRyrMTv_5O0l2rbGsYZvOwo8/view?usp=sharing), [RETINA](https://drive.google.com/file/d/1MMK8bourqVFyJ-UbuMgB40n-xTYHlHl2/view?usp=sharing), and [CIFAR10C](https://drive.google.com/drive/folders/1BIBvskSH-gbt7s50fRrJO5Rld1XXqCbb?usp=sharing) and put them under data folder.
 
 Note that we only provide the pretrained model and distilled data for DIGITS.
 
